@@ -1,3 +1,6 @@
+
+import java.awt.Color;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -29,7 +32,7 @@ public class Exemplo3 extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtIdade = new javax.swing.JTextField();
         btnVerificar = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         labelResposta = new javax.swing.JLabel();
@@ -44,7 +47,7 @@ public class Exemplo3 extends javax.swing.JFrame {
         labelMedia = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         labelSituacao = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        btnSair = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -62,9 +65,9 @@ public class Exemplo3 extends javax.swing.JFrame {
 
         jLabel4.setText("Digite a idade:");
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        txtIdade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                txtIdadeActionPerformed(evt);
             }
         });
 
@@ -90,13 +93,14 @@ public class Exemplo3 extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
-                    .addComponent(jLabel4)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnVerificar)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(labelResposta)))
+                        .addComponent(labelResposta))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(txtIdade, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap(94, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -107,7 +111,7 @@ public class Exemplo3 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtIdade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnVerificar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -130,6 +134,11 @@ public class Exemplo3 extends javax.swing.JFrame {
         btnProcessar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnProcessar.setForeground(new java.awt.Color(204, 0, 0));
         btnProcessar.setText("Processar");
+        btnProcessar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProcessarActionPerformed(evt);
+            }
+        });
 
         jLabel8.setText("Média das notas:");
 
@@ -197,12 +206,12 @@ public class Exemplo3 extends javax.swing.JFrame {
                 .addContainerGap(8, Short.MAX_VALUE))
         );
 
-        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(0, 0, 255));
-        jButton3.setText("Sair");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnSair.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnSair.setForeground(new java.awt.Color(0, 0, 255));
+        btnSair.setText("Sair");
+        btnSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnSairActionPerformed(evt);
             }
         });
 
@@ -218,7 +227,7 @@ public class Exemplo3 extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnSair, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(245, 245, 245))
         );
         layout.setVerticalGroup(
@@ -230,24 +239,48 @@ public class Exemplo3 extends javax.swing.JFrame {
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnSair, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+        dispose();
+    }//GEN-LAST:event_btnSairActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void txtIdadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIdadeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_txtIdadeActionPerformed
 
     private void btnVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerificarActionPerformed
         // TODO add your handling code here:
+        if (Integer.parseInt(txtIdade.getText()) >= 18) {
+            labelResposta.setText("Maior de idade");
+        } else {
+            labelResposta.setText("Menor de idade");
+        }
     }//GEN-LAST:event_btnVerificarActionPerformed
+
+    private void btnProcessarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProcessarActionPerformed
+        // TODO add your handling code here:
+        float media = (Float.parseFloat(txtNota1.getText()) + Float.parseFloat(txtNota2.getText())) / 2;
+        
+        labelMedia.setText(String.format("%.2f", media));
+        
+        if (media >= 6) {
+            labelSituacao.setText("Aprovado");
+            labelSituacao.setForeground(Color.green);
+        } else if (media >= 2) {
+            labelSituacao.setText("Exame");
+            labelSituacao.setForeground(Color.yellow);
+        } else {
+            labelSituacao.setText("Reprovado");
+            labelSituacao.setForeground(Color.red);
+        }
+    }//GEN-LAST:event_btnProcessarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -286,8 +319,8 @@ public class Exemplo3 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnProcessar;
+    private javax.swing.JButton btnSair;
     private javax.swing.JButton btnVerificar;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
@@ -299,10 +332,10 @@ public class Exemplo3 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel labelMedia;
     private javax.swing.JLabel labelResposta;
     private javax.swing.JLabel labelSituacao;
+    private javax.swing.JTextField txtIdade;
     private javax.swing.JTextField txtNota1;
     private javax.swing.JTextField txtNota2;
     // End of variables declaration//GEN-END:variables
