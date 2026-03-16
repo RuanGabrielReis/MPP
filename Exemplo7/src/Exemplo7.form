@@ -315,6 +315,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;center&gt;&#xa;Exibir &lt;br&gt; somat&#xf3;rio &lt;br&gt; da coluna total&#xa;&lt;/center&gt;&#xa;&lt;/html&gt;"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSomatorioActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnQuantidade">
           <Properties>
