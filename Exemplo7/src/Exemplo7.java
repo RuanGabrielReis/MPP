@@ -250,6 +250,11 @@ public class Exemplo7 extends javax.swing.JFrame {
         linha[3] = String.format("R$ %.2f", total);
         
         tabela.addRow(linha);
+        
+        txtPizza.setText("");
+        txtPreco.setText("");
+        txtQuantidade.setText("");
+        
     }//GEN-LAST:event_btnAddPizzaActionPerformed
 
     /**
