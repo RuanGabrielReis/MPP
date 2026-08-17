@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Aula2302/Aula2302.iml" filepath="$PROJECT_DIR$/Aula2302/Aula2302.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EstudoHerança/EstudoHerança.iml" filepath="$PROJECT_DIR$/EstudoHerança/EstudoHerança.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Estudo_Classes_Abstratas/Estudo_Classes_Abstratas.iml" filepath="$PROJECT_DIR$/Estudo_Classes_Abstratas/Estudo_Classes_Abstratas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Estudo_Interface/Estudo_Interface.iml" filepath="$PROJECT_DIR$/Estudo_Interface/Estudo_Interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exemplo02/Exemplo02.iml" filepath="$PROJECT_DIR$/Exemplo02/Exemplo02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exemplo1/Exemplo1.iml" filepath="$PROJECT_DIR$/Exemplo1/Exemplo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exemplo1_OO/Exemplo1_OO.iml" filepath="$PROJECT_DIR$/Exemplo1_OO/Exemplo1_OO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exemplo2/Exemplo2.iml" filepath="$PROJECT_DIR$/Exemplo2/Exemplo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exemplo3/Exemplo3.iml" filepath="$PROJECT_DIR$/Exemplo3/Exemplo3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exemplo4/Exemplo4.iml" filepath="$PROJECT_DIR$/Exemplo4/Exemplo4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exemplo5/Exemplo5.iml" filepath="$PROJECT_DIR$/Exemplo5/Exemplo5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exemplo6/Exemplo6.iml" filepath="$PROJECT_DIR$/Exemplo6/Exemplo6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exemplo7/Exemplo7.iml" filepath="$PROJECT_DIR$/Exemplo7/Exemplo7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Herança/Herança.iml" filepath="$PROJECT_DIR$/Herança/Herança.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaApplication3/JavaApplication3.iml" filepath="$PROJECT_DIR$/JavaApplication3/JavaApplication3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MPP.iml" filepath="$PROJECT_DIR$/.idea/MPP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EstudoHerança/VeiculosHeranca/VeiculosHeranca.iml" filepath="$PROJECT_DIR$/EstudoHerança/VeiculosHeranca/VeiculosHeranca.iml" />
+    </modules>
+  </component>
+</project>
